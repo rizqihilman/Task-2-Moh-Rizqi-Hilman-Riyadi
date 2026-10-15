@@ -1,6 +1,6 @@
 # Task 2 — API Automation Test (Playwright)
 
-Automation untuk tiga Petstore endpoints dari Task 1, written with Playwright Test (JavaScript) so API and UI automation share one stack.
+Automation untuk tiga Petstore endpoints dari Task 1, ditulias dengan Playwright Test (JavaScript) sehingga API dan UI automation sama.
 
 - `POST /pet` — create a pet
 - `GET /pet/findByStatus` — search pets by status

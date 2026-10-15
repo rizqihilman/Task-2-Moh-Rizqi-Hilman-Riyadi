@@ -1,0 +1,988 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\playwright.config.js",
+    "rootDir": "C:/Users/syalwa/AppData/Local/hermes/profiles/gobocs/workspace/qa-take-home-test/task-2-api-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/syalwa/AppData/Local/hermes/profiles/gobocs/workspace/qa-take-home-test/task-2-api-automation/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/syalwa/AppData/Local/hermes/profiles/gobocs/workspace/qa-take-home-test/task-2-api-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests",
+        "snapshotDir": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "https://petstore.swagger.io/v2/",
+          "extraHTTPHeaders": {
+            "Accept": "application/json"
+          },
+          "headless": false
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pet-delete.spec.js",
+      "file": "pet-delete.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DELETE /pet/{petId}",
+          "file": "pet-delete.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should delete an existing pet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1440,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:02.413Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d74132c18c9d6ebb060e-69105fa2ea5000db10d9",
+              "file": "pet-delete.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "should make the deleted pet unavailable afterwards",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1593,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:03.921Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d74132c18c9d6ebb060e-6955b8d0337608e48963",
+              "file": "pet-delete.spec.js",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "should remove the deleted pet from findByStatus results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1769,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:05.546Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d74132c18c9d6ebb060e-3dae16c4bfbd61266ca8",
+              "file": "pet-delete.spec.js",
+              "line": 39,
+              "column": 3
+            },
+            {
+              "title": "should return 404 when the pet does not exist",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1051,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:07.326Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d74132c18c9d6ebb060e-a2ca99641748c676c276",
+              "file": "pet-delete.spec.js",
+              "line": 50,
+              "column": 3
+            },
+            {
+              "title": "should return 400 for a non-numeric pet id",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js",
+                        "line": 60,
+                        "column": 10
+                      }
+                    },
+                    {
+                      "type": "known-defect",
+                      "description": "BUG-004: DELETE /pet/abc returns 404 + java.lang.NumberFormatException instead of 400"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1005,
+                      "error": {
+                        "message": "Error: documented: 400 Invalid ID supplied\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: documented: 400 Invalid ID supplied\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js:64:65",
+                        "location": {
+                          "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js",
+                          "column": 65,
+                          "line": 64
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mdelete\u001b[39m(\u001b[32m'pet/abc'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30\u001b[39m_000 })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 Invalid ID supplied'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js",
+                            "column": 65,
+                            "line": 64
+                          },
+                          "message": "Error: documented: 400 Invalid ID supplied\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n\u001b[0m \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mdelete\u001b[39m(\u001b[32m'pet/abc'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30\u001b[39m_000 })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 64 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 Invalid ID supplied'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 65 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 66 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js:64:65\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:08.388Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js",
+                            "line": 60,
+                            "column": 10
+                          }
+                        },
+                        {
+                          "type": "known-defect",
+                          "description": "BUG-004: DELETE /pet/abc returns 404 + java.lang.NumberFormatException instead of 400"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results\\pet-delete-DELETE-pet-petI-a8d9b-00-for-a-non-numeric-pet-id\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-delete.spec.js",
+                        "column": 65,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d74132c18c9d6ebb060e-9ed84592bf582b22cbc1",
+              "file": "pet-delete.spec.js",
+              "line": 59,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pet-find-by-status.spec.js",
+      "file": "pet-find-by-status.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "GET /pet/findByStatus",
+          "file": "pet-find-by-status.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return only pets matching status \"available\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1271,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:09.420Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-4cd516da9a14b9543140",
+              "file": "pet-find-by-status.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "should return only pets matching status \"pending\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1024,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:10.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-ac039147147715461549",
+              "file": "pet-find-by-status.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "should combine multiple status filters",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:11.746Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-db85f1c9e8fbad261c61",
+              "file": "pet-find-by-status.spec.js",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "should include a newly created pet in its status list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1808,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:13.075Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-5797e2ccb3a4be6f58b6",
+              "file": "pet-find-by-status.spec.js",
+              "line": 45,
+              "column": 3
+            },
+            {
+              "title": "should reject an invalid status value with 400",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                        "line": 66,
+                        "column": 10
+                      }
+                    },
+                    {
+                      "type": "known-defect",
+                      "description": "BUG-001: findByStatus returns 200 + [] for an invalid status value"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1015,
+                      "error": {
+                        "message": "Error: documented: 400 Invalid status value\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: documented: 400 Invalid status value\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js:70:66",
+                        "location": {
+                          "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                          "column": 66,
+                          "line": 70
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mfindByStatus(\u001b[32m'notastatus'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 Invalid status value'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   test(\u001b[32m'should require the status query parameter'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                            "column": 66,
+                            "line": 70
+                          },
+                          "message": "Error: documented: 400 Invalid status value\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[0m \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mfindByStatus(\u001b[32m'notastatus'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 70 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 Invalid status value'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 71 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 72 |\u001b[39m\n \u001b[90m 73 |\u001b[39m   test(\u001b[32m'should require the status query parameter'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js:70:66\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:14.903Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                            "line": 66,
+                            "column": 10
+                          }
+                        },
+                        {
+                          "type": "known-defect",
+                          "description": "BUG-001: findByStatus returns 200 + [] for an invalid status value"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results\\pet-find-by-status-GET-pet-28410-valid-status-value-with-400\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                        "column": 66,
+                        "line": 70
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-b4274f6cbe88668e34d6",
+              "file": "pet-find-by-status.spec.js",
+              "line": 65,
+              "column": 3
+            },
+            {
+              "title": "should require the status query parameter",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                        "line": 74,
+                        "column": 10
+                      }
+                    },
+                    {
+                      "type": "known-defect",
+                      "description": "BUG-001: findByStatus without the status parameter returns 200 + []"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1010,
+                      "error": {
+                        "message": "Error: documented: 400 (status is a required parameter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: documented: 400 (status is a required parameter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js:78:78",
+                        "location": {
+                          "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                          "column": 78,
+                          "line": 78
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 76 |\u001b[39m\n \u001b[90m 77 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m'pet/findByStatus'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30\u001b[39m_000 })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 (status is a required parameter)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 81 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                            "column": 78,
+                            "line": 78
+                          },
+                          "message": "Error: documented: 400 (status is a required parameter)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m400\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[0m \u001b[90m 76 |\u001b[39m\n \u001b[90m 77 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m'pet/findByStatus'\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m30\u001b[39m_000 })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 78 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 400 (status is a required parameter)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 79 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 81 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js:78:78\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:15.953Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                            "line": 74,
+                            "column": 10
+                          }
+                        },
+                        {
+                          "type": "known-defect",
+                          "description": "BUG-001: findByStatus without the status parameter returns 200 + []"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results\\pet-find-by-status-GET-pet-a1898--the-status-query-parameter\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-find-by-status.spec.js",
+                        "column": 78,
+                        "line": 78
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "94d16677ee9233aef7bc-16d473361af066615f3b",
+              "file": "pet-find-by-status.spec.js",
+              "line": 73,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pet-post.spec.js",
+      "file": "pet-post.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "POST /pet",
+          "file": "pet-post.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create a new pet successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1552,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:17.014Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c50c709b2eb5aa6fba3-629651a8d99595bf8e27",
+              "file": "pet-post.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "should create a pet with only the required fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1283,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:18.596Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c50c709b2eb5aa6fba3-a88573eb235dad41391b",
+              "file": "pet-post.spec.js",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "should reject malformed JSON with 400",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1021,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:19.900Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c50c709b2eb5aa6fba3-ae1915a634ee88b13c29",
+              "file": "pet-post.spec.js",
+              "line": 52,
+              "column": 3
+            },
+            {
+              "title": "should reject an empty payload with 405",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                        "line": 71,
+                        "column": 10
+                      }
+                    },
+                    {
+                      "type": "known-defect",
+                      "description": "BUG-002: POST /pet accepts an empty payload and creates a nameless record"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1283,
+                      "error": {
+                        "message": "Error: documented: 405 Invalid input\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: documented: 405 Invalid input\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js:82:59",
+                        "location": {
+                          "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                          "column": 59,
+                          "line": 82
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 80 |\u001b[39m     }\n \u001b[90m 81 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 405 Invalid input'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m405\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m\n \u001b[90m 85 |\u001b[39m   test(\u001b[32m'should reject a status value outside the allowed enum with 405'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                            "column": 59,
+                            "line": 82
+                          },
+                          "message": "Error: documented: 405 Invalid input\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[0m \u001b[90m 80 |\u001b[39m     }\n \u001b[90m 81 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 405 Invalid input'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m405\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 84 |\u001b[39m\n \u001b[90m 85 |\u001b[39m   test(\u001b[32m'should reject a status value outside the allowed enum with 405'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js:82:59\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:20.946Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                            "line": 71,
+                            "column": 10
+                          }
+                        },
+                        {
+                          "type": "known-defect",
+                          "description": "BUG-002: POST /pet accepts an empty payload and creates a nameless record"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results\\pet-post-POST-pet-should-reject-an-empty-payload-with-405\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                        "column": 59,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c50c709b2eb5aa6fba3-2bac104c307ad53091ab",
+              "file": "pet-post.spec.js",
+              "line": 70,
+              "column": 3
+            },
+            {
+              "title": "should reject a status value outside the allowed enum with 405",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "fail",
+                      "location": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                        "line": 86,
+                        "column": 10
+                      }
+                    },
+                    {
+                      "type": "known-defect",
+                      "description": "BUG-002: POST /pet accepts status \"sleepy\" and persists it"
+                    }
+                  ],
+                  "expectedStatus": "failed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1329,
+                      "error": {
+                        "message": "Error: documented: 405 Invalid input (status must be available | pending | sold)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: documented: 405 Invalid input (status must be available | pending | sold)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js:92:103",
+                        "location": {
+                          "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                          "column": 103,
+                          "line": 92
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mcreate(pet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 405 Invalid input (status must be available | pending | sold)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m405\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                            "column": 103,
+                            "line": 92
+                          },
+                          "message": "Error: documented: 405 Invalid input (status must be available | pending | sold)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m405\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[0m \u001b[90m 90 |\u001b[39m\n \u001b[90m 91 |\u001b[39m     \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m api\u001b[33m.\u001b[39mcreate(pet)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 92 |\u001b[39m     expect(res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m'documented: 405 Invalid input (status must be available | pending | sold)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m405\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 93 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 94 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 95 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js:92:103\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-15T05:21:22.263Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                            "line": 86,
+                            "column": 10
+                          }
+                        },
+                        {
+                          "type": "known-defect",
+                          "description": "BUG-002: POST /pet accepts status \"sleepy\" and persists it"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\test-results\\pet-post-POST-pet-should-r-c27b2-e-the-allowed-enum-with-405\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\syalwa\\AppData\\Local\\hermes\\profiles\\gobocs\\workspace\\qa-take-home-test\\task-2-api-automation\\tests\\pet-post.spec.js",
+                        "column": 103,
+                        "line": 92
+                      }
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9c50c709b2eb5aa6fba3-0c0bcdf033ef1a43a55b",
+              "file": "pet-post.spec.js",
+              "line": 85,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T05:21:01.544Z",
+    "duration": 22107.976,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

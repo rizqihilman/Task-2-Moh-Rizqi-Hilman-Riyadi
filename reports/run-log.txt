@@ -1,0 +1,21 @@
+
+Running 16 tests using 1 worker
+
+  ok  1 tests\pet-delete.spec.js:16:3 › DELETE /pet/{petId} › should delete an existing pet (2.0s)
+  ok  2 tests\pet-delete.spec.js:28:3 › DELETE /pet/{petId} › should make the deleted pet unavailable afterwards (1.6s)
+  ok  3 tests\pet-delete.spec.js:39:3 › DELETE /pet/{petId} › should remove the deleted pet from findByStatus results (2.4s)
+  ok  4 tests\pet-delete.spec.js:50:3 › DELETE /pet/{petId} › should return 404 when the pet does not exist (1.0s)
+  x   5 tests\pet-delete.spec.js:59:3 › DELETE /pet/{petId} › should return 400 for a non-numeric pet id (1.1s)
+  ok  6 tests\pet-find-by-status.spec.js:16:3 › GET /pet/findByStatus › should return only pets matching status "available" (1.6s)
+  ok  7 tests\pet-find-by-status.spec.js:26:3 › GET /pet/findByStatus › should return only pets matching status "pending" (1.0s)
+  ok  8 tests\pet-find-by-status.spec.js:36:3 › GET /pet/findByStatus › should combine multiple status filters (1.8s)
+  ok  9 tests\pet-find-by-status.spec.js:45:3 › GET /pet/findByStatus › should include a newly created pet in its status list (1.9s)
+  x  10 tests\pet-find-by-status.spec.js:65:3 › GET /pet/findByStatus › should reject an invalid status value with 400 (1.0s)
+  x  11 tests\pet-find-by-status.spec.js:73:3 › GET /pet/findByStatus › should require the status query parameter (1.0s)
+  ok 12 tests\pet-post.spec.js:16:3 › POST /pet › should create a new pet successfully (1.6s)
+  ok 13 tests\pet-post.spec.js:38:3 › POST /pet › should create a pet with only the required fields (1.4s)
+  ok 14 tests\pet-post.spec.js:52:3 › POST /pet › should reject malformed JSON with 400 (1.0s)
+  x  15 tests\pet-post.spec.js:70:3 › POST /pet › should reject an empty payload with 405 (1.3s)
+  x  16 tests\pet-post.spec.js:85:3 › POST /pet › should reject a status value outside the allowed enum with 405 (1.3s)
+
+  16 passed (27.6s)

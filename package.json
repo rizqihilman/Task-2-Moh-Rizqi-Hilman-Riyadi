@@ -1,0 +1,13 @@
+{
+  "name": "task-2-api-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright API automation for the Petstore endpoints (POST /pet, GET /pet/findByStatus, DELETE /pet/{petId})",
+  "scripts": {
+    "test": "playwright test",
+    "test:report": "playwright show-report reports/html-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
